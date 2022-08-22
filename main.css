@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+
+*
+{
+    box-sizing: border-box;
+    font-family: 'Muli', sans-serif;
+}
+body{
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin:0;
+    padding:0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+.main_container
+{
+    text-align: center;
+}
+.main_container h1
+{
+    font-size:2rem;
+}
+.main_container div
+{
+    position:relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:transparent;
+    border:2px solid #9fa4a8;
+    width:700px;
+    border-radius:15px;
+    padding:0.7rem 2rem;
+    margin:1rem 0;
+    overflow-x:hidden;
+    height:90px;
+}
+.main_container div h3{
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.main_container div button
+{
+    background-color: transparent;
+    border:none;
+}
+.fa-2x{
+    font-size:1.3rem;
+}
+.main_container .active
+{
+    height:145px ;
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
+}
+.active:before
+{
+    content:'\f075';
+    font-family: 'font Awesome 5 Free';
+    font-size:7rem;
+    position:absolute;
+    top:30px;
+    left:10px;
+    bottom:0;
+    color:#2ecc71;
+    z-index: 0;
+    opacity: 0.2;
+}
+.active:after
+{
+    content:'\f075';
+    font-family: 'font Awesome 5 Free';
+    font-size:7rem;
+    position:absolute;
+    top:5px;
+    left:-20px;
+    bottom:0;
+    color:#3498db;;
+    z-index: 0;
+    opacity: 0.2;
+    transform:rotateY(180deg);  
+}
