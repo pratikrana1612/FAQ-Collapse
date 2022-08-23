@@ -14,7 +14,7 @@ body{
     margin:0;
     padding:0;
     background-color: #f0f0f0;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .main_container
 {
@@ -47,13 +47,14 @@ body{
 {
     background-color: transparent;
     border:none;
+    cursor:pointer;
 }
 .fa-2x{
     font-size:1.3rem;
 }
 .main_container .active
 {
-    height:145px ;
+    height:150px ;
     background-color: #fff;
     box-shadow: 0px 2px 5px 5px rgba(0,0,0,0.1);
 }
@@ -83,4 +84,31 @@ body{
     z-index: 0;
     opacity: 0.2;
     transform:rotateY(180deg);  
+}
+div p{
+    display:none;
+}
+.active p
+{
+    display:block;
+    position:absolute;
+    top:60%;
+}
+.main_container .active button{
+    background-color:#9fa4a8;
+    padding:5px 10px;
+    border-radius:50%;
+}
+.fa-xmark
+{
+    color:white;
+}
+
+@media (max-width:44rem)
+{
+    .main_container div
+        {
+            width:100%;
+            padding:0 1rem;
+        }   
 }
